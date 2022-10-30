@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package UI;
-
+import UI.GUI;
 /**
  *
  * @author admin
@@ -15,6 +15,7 @@ public class splash extends javax.swing.JFrame {
      */
     public splash() {
         initComponents();
+        
     }
 
     /**
@@ -106,12 +107,11 @@ public class splash extends javax.swing.JFrame {
                mysplash.jProgressBar.setValue(i);
                mysplash.lblPercentage.setText(Integer.toString(i)+"%");
            }
+           new GUI();
        }catch(Exception e)
        {
            
        }
-       
-       
        
     }
 
