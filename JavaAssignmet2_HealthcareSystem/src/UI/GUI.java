@@ -7,7 +7,22 @@ package UI;
  *
  * @author admin
  */
+import Model.City;
+import Model.Community;
+import Model.Doctor;
+import Model.DoctorDirectory;
+import Model.Encounter;
+import Model.EncounterHistory;
+import Model.Hospital;
+import Model.HospitalDirectory;
+import Model.House;
+import Model.Patient;
+import Model.PatientDirectory;
+import Model.Person;
+import Model.PersonDirectory;
+import Model.VitalSigns;
 
+import Model.City;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -43,7 +58,7 @@ public class GUI{
 	int arraySize = 100;
 	int length;
 	
-	String FRAME_TITLE = "Supermarket Management System V0.0";
+	String FRAME_TITLE = "Hospital Management System";
 	String ROOT_PASSWORD = "root001";
 	String FONT_DEFAULT = "proxima-nova";
 
@@ -51,7 +66,19 @@ public class GUI{
 	Users users;
 	Items items;
 	Orders orders;
-
+        City city;
+        Community community;
+        Doctor doctor;
+        DoctorDirectory doctorDir;
+        Encounter encounter;
+        Hospital hospital;
+        HospitalDirectory hospitaldirectory;
+        House house;
+        Patient patient;
+        PatientDirectory patientDir;
+        Person person;
+        PersonDirectory personDir;
+        VitalSigns vitalsigns;
 	// other objects
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH:mm:ss");
 
@@ -188,6 +215,8 @@ public class GUI{
 		users = new Users();
 		items = new Items();
 		orders = new Orders();
+                
+                
 
 		// frame
 		frame = new JFrame();
@@ -475,7 +504,8 @@ public class GUI{
 					userPanel = new JPanel();
 					userPanel.setBackground(Color.WHITE);
 					userPanel.setLayout(null);
-					userPanel.add(btnUserProfile);
+				
+                                        userPanel.add(btnUserProfile);
 					userPanel.add(btnUserMarket);
 					userPanel.add(btnUserOrders);
 					userPanel.add(btnUserLogout);
