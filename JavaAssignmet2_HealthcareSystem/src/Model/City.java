@@ -10,22 +10,25 @@ import java.util.ArrayList;
  *
  * @author admin
  */
+
 public class City {
-    public static String[] cityValues = {"Boston", "Salem", "Cambridge", "Worcester", "Plymouth", "Lowell"};
-    public String cityName;
-    public static ArrayList<Community> communityDir = new ArrayList<>();
-    public String state;
+    private String cityName;
+    private ArrayList<Community> comm;
+
+    public ArrayList<Community> getComm() {
+        return comm;
+    }
+
+    public void setComm(ArrayList<Community> comm) {
+        this.comm = comm;
+    }
+    
+    public City(String c ){
+        cityName = c;
+    }
 
     public String getCityName() {
         return cityName;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
     }
 
     public void setCityName(String cityName) {

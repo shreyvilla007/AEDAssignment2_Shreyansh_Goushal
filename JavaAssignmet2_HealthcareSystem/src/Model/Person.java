@@ -8,39 +8,55 @@ package Model;
  *
  * @author admin
  */
+import java.util.Date;
+
 public class Person {
-    public String name;
-    public long phoneNumber;
-    public String gender;
-    public int age;
-    public String bloodgroup;
-    public House address = new House();
+    private String fullName;
+    private House residence;
+    private String gender;
+    private Date dob;
+    private int id;
+    private boolean displayPerson = true;
 
-    public Person() {
+    public Person(String fullName,
+            House residence,
+            String gender,
+            Date dob,
+            int id) {
+
+        this.fullName = fullName;
+        this.residence = residence;
+        this.gender = gender;
+        this.dob = dob;
+        this.id = id;
+
+    }
+    public Person(String houseNo, Community community){
+        residence = new House(houseNo, community, new City(""));
     }
     
-    public String getBloodgroup() {
-        return bloodgroup;
+    public boolean isDisplayPerson() {
+        return displayPerson;
     }
 
-    public void setBloodgroup(String bloodgroup) {
-        this.bloodgroup = bloodgroup;
+    public void setDisplayPerson(boolean displayPerson) {
+        this.displayPerson = displayPerson;
     }
     
-    public String getName() {
-        return name;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
-    public long getPhoneNumber() {
-        return phoneNumber;
+    public House getResidence() {
+        return residence;
     }
 
-    public void setPhoneNumber(long phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setResidence(House residence) {
+        this.residence = residence;
     }
 
     public String getGender() {
@@ -51,26 +67,20 @@ public class Person {
         this.gender = gender;
     }
 
-    public int getAge() {
-        return age;
+    public Date getDob() {
+        return dob;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setDob(Date dob) {
+        this.dob = dob;
     }
-    
-    public Person(String name, String phoneNumber, String gender, int age, String bloodgroup, int houseNumber, String community, String city, String state, int zip){
-        this.name = name;
-        this.phoneNumber = Long.parseLong(phoneNumber);
-        this.gender = gender;
-        this.age = age;
-        this.bloodgroup = bloodgroup;
-        this.address.houseNumber = houseNumber;
-        this.address.communityName = community;
-        this.address.cityName = city;
-        this.address.state = state;
-        this.address.zip = zip;
-        
+
+    public int getId() {
+        return id;
     }
-    
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 }
