@@ -50,12 +50,20 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace pref="282" max="32767" attributes="0"/>
-                  <Component id="lblPercentage" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="270" max="-2" attributes="0"/>
-              </Group>
               <Component id="jProgressBar" alignment="1" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="184" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="lblPercentage" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="270" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="139" max="32767" attributes="0"/>
@@ -68,7 +76,9 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="279" max="32767" attributes="0"/>
+                  <EmptySpace pref="69" max="32767" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="266" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="lblPercentage" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jProgressBar" min="-2" pref="9" max="-2" attributes="0"/>
@@ -108,6 +118,13 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JProgressBar" name="jProgressBar">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/UI/hospital4 (1).png"/>
+            </Property>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
