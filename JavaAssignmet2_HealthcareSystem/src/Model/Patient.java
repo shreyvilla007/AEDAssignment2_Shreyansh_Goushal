@@ -13,7 +13,7 @@ public class Patient extends Person{
     
     private EncounterHistory encounterHistory;
 
-    public Patient(String fullName, House residence, String gender, Date dob, int id, Encounter en) {
+    public Patient(String fullName, House residence, String gender, String dob, int id, Encounter en) {
         super(fullName, residence, gender, dob, id);
         
         this.encounterHistory = new EncounterHistory();
