@@ -49,7 +49,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
                 String[] row = lines[m].toString().split(" ");
                 Date resultdate = new Date(System.currentTimeMillis());//row[7]
 
-                Person p= new Person(row[0]+row[1],new House(row[2], new Community(row[13]), new City(row[5])), row[7], new Date(row[8]),Integer.valueOf(row[9]));
+                Person p= new Person(row[0]+row[1],new House(row[2], new Community(row[13]), new City(row[5])), row[7], new String(row[8]),Integer.valueOf(row[9]));
                 
                 VitalSigns vs = new VitalSigns(Integer.valueOf(row[10]) , Integer.valueOf(row[11]), Integer.valueOf(row[12]));
                 Encounter enc = new Encounter(vs , resultdate, "Fever");
