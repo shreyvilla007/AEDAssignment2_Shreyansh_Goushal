@@ -10,32 +10,47 @@ import java.util.Date;
  *
  * @author admin
  */
+
 public class Encounter {
-    public Date visitDate;
-    public VitalSigns vitalSigns = new VitalSigns();
-    public Patient patient = new Patient();
+    private VitalSigns vitalSign;
+    private Date aptTime;
+    private String diagnosis;
 
-    public VitalSigns getVitalSigns() {
-        return vitalSigns;
+    public Encounter( VitalSigns vitalSign,
+            Date aptTime,
+            String result){
+
+        this.vitalSign =vitalSign;
+        this.aptTime = aptTime;
+        this.diagnosis = result;
+
     }
 
-    public void setVitalSigns(VitalSigns vitalSigns) {
-        this.vitalSigns = vitalSigns;
+    public VitalSigns getVitalSign() {
+        return vitalSign;
     }
 
-    public Patient getPatient() {
-        return patient;
+    public void setVitalSign(VitalSigns vitalSign) {
+        this.vitalSign = vitalSign;
     }
 
-    public void setPatient(Patient patient) {
-        this.patient = patient;
+    public Date getAptTime() {
+        return aptTime;
     }
 
-    public Date getVisitDate() {
-        return visitDate;
+    public void setAptTime(Date aptTime) {
+        this.aptTime = aptTime;
     }
 
-    public void setVisitDate(Date visitDate) {
-        this.visitDate = visitDate;
+    public String getDiagnosis() {
+        return diagnosis;
+    }
+
+    public void setDiagnosis(String result) {
+        this.diagnosis = result;
+    }
+
+    void addEncounter(Encounter eh) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

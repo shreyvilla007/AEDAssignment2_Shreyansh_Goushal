@@ -205,7 +205,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        if( user.equals("system")) {
+        if( user.equals("admin")) {
             PersonsScreen view = new PersonsScreen(ms);
             jSplitPane1.setRightComponent(view);
         }
@@ -217,7 +217,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if(user.equals("person") || user.equals("system")) {
+        if(user.equals("person") || user.equals("admin")) {
             PersonScreen view = new PersonScreen(ms);
             jSplitPane1.setRightComponent(view);
         }
@@ -229,7 +229,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        if(user.equals("doctor") || user.equals("system")) {
+        if(user.equals("doctor") || user.equals("admin")) {
             ExistingPatient view = new ExistingPatient(ms);
             jSplitPane1.setRightComponent(view);
         }
@@ -241,7 +241,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        if(user.equals("comm") || user.equals("system")) {
+        if(user.equals("comm") || user.equals("admin")) {
             CommunityScreen view = new CommunityScreen(ms.getPersonList());
             jSplitPane1.setRightComponent(view);
         }
@@ -253,7 +253,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-            if(user.equals("system")&& isAPatient(user)) {
+            if((user.equals("person") && isAPatient(user))) {
             GetDoctorsForm view = new GetDoctorsForm(ms, user);
             jSplitPane1.setRightComponent(view);
             System.out.println("isApatient --->"+isAPatient(user));
@@ -266,9 +266,11 @@ public class MedSystemFrame extends javax.swing.JFrame {
    
     private boolean isAPatient(String patientName) {
         for(Patient p:ms.getPatientList().getPatients() ) {
-            if(p.getFullName().equals(patientName))
+            if(ms.getPatientList().getPatients().size()>0)
+                
                 return true;
         }
+        System.out.println("isApatient --->"+ms.getPatientList().getPatients());
         return false;
     }
 

@@ -145,6 +145,7 @@ public class Orders extends Function{
         for(int i=0; i<=this.newOrderID; i++){
             info += i + " " + this.date[i] + " " + this.username[i] + " " + this.itemsName[i] + " " + this.itemsPricePerQuantity[i] + " " + this.itemsQuantity[i] + " " + this.totalPrice[i];
             
+            
             if(i != this.newOrderID){
                 info += "\n";
             }

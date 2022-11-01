@@ -148,11 +148,11 @@ public class MainFrameForm extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
-        if( (txtUsername.getText().matches("system") && txtPassword.getText().matches("system")) 
+        if( (txtUsername.getText().matches("admin") && txtPassword.getText().matches("admin")) 
                 ||(txtUsername.getText().matches("person") && txtPassword.getText().matches("person"))
                 ||(txtUsername.getText().matches("doctor") && txtPassword.getText().matches("doctor"))
                 ||(txtUsername.getText().matches("comm") && txtPassword.getText().matches("comm"))
-                ||(txtUsername.getText().matches("alank") && txtPassword.getText().matches("alank")))
+                ||(txtUsername.getText().matches("shrey") && txtPassword.getText().matches("shrey")))
         {
             this.patient.setUser(txtUsername.getText());
             this.patient.setVisible(true);

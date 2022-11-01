@@ -5,46 +5,33 @@
 package Model;
 
 import java.util.Date;
-
+import java.util.ArrayList;
 /**
  *
  * @author admin
  */
-public class Community extends City{
-    public String communityName;
-    public Date createdAt;
 
-    public String getCommunityName() {
-        return communityName;
+
+public class Community {
+    private String community;
+    private ArrayList<House> house;
+
+    public ArrayList<House> getHouse() {
+        return house;
     }
 
-    public void setCommunityName(String communityName) {
-        this.communityName = communityName;
+    public void setHouse(ArrayList<House> house) {
+        this.house = house;
     }
     
-    public String validateCommunityName(String name) {
-        String isValid = "";
-        if (name.equals("")) {
-            isValid = "Community Name cannot be empty! \n";
-        } else if (name.length() < 2 || name.length() > 30) {
-            isValid = "Community Name must be atleast 2 characters and maximum 30 characters long! \n";
-        } else if (!name.matches("[a-zA-Z ]{2,30}")) {
-            isValid = "Invalid Community Name Field! \n";
-        }else if (name.equals("Enter here")) {
-            isValid = "Invalid Name \n";
-        }
-        return isValid;
+    public Community(String comm){
+        community = comm;
     }
-    
-    public Boolean alreadtExists(String city, String community) {
-        Boolean found = false;
-        for (int i = 0; i < City.communityDir.size(); i++) {
-            if (city.equals(City.communityDir.get(i).cityName) && community.equals(City.communityDir.get(i).communityName)) {
-                found = true;
-            }
-        }
-        return found;
+    public String getCommunity() {
+        return community;
+    }
+    public void setCommunity(String community) {
+        this.community = community;
     }
     
 }
-

@@ -9,5 +9,27 @@ package Model;
  * @author admin
  */
 public class Doctor {
+    String doctorName;
+    Hospital hospital;
+
+    public Doctor(String doctorName, Hospital hospital) {
+        this.doctorName = doctorName;
+        this.hospital = hospital;
+    }
     
+    public String getDoctorName() {
+        return doctorName;
+    }
+
+    public void setDoctorName(String doctorName) {
+        this.doctorName = doctorName;
+    }
+
+    public Hospital getHospital() {
+        return hospital;
+    }
+
+    public void setHospital(Hospital hospital) {
+        this.hospital = hospital;
+    }
 }
