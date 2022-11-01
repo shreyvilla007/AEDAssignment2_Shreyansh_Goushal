@@ -8,26 +8,39 @@ package Model;
  *
  * @author admin
  */
-public class House extends Community{
-    public int houseNumber;
-    public int zip;
+public class House {
 
-    public int getHouseNumber() {
-        return houseNumber;
+    private String houseNo;
+    private Community community;
+    private City city;
+    
+    public House(String add, Community community,City c){
+        this.houseNo = add;
+        this.city = c;
+        this.community = community;
     }
 
-    public void setHouseNumber(int houseNumber) {
-        this.houseNumber = houseNumber;
+    public String getHouseNo() {
+        return houseNo;
     }
 
-
-    public int getZip() {
-        return zip;
+    public void setHouseNo(String houseNo) {
+        this.houseNo = houseNo;
     }
 
-    public void setZip(int zip) {
-        this.zip = zip;
+    public Community getCommunity() {
+        return community;
     }
 
-   
+    public void setCommunity(Community community) {
+        this.community = community;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
 }
