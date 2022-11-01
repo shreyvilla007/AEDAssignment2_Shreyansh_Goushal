@@ -113,10 +113,10 @@ public class GetDoctorsForm extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
         private void displayDoctors(Patient patient) {
-        //if(patient == null)
-          //  return;
+        if(patient == null)
+           return;
         
-        //String patientCommunity = patient.getResidence().getCommunity().getCommunity();
+        String patientCommunity = patient.getResidence().getCommunity().getCommunity();
         
         
         DefaultTableModel model = (DefaultTableModel)tblDoctors.getModel();
@@ -125,7 +125,7 @@ public class GetDoctorsForm extends javax.swing.JPanel {
                 System.out.println("Doctors--->"+ms.getDoctorList().getDoctors());
                 System.out.println("Hospital's Community--->"+d.getHospital().getCommunity());
                 
-            if(d.getHospital().getCommunity().length()>0) {
+            if(d.getHospital().getCommunity().equals(patientCommunity)) {
                 Object[] row = new Object [3];
                 row[0] = d.getDoctorName();
                 row[1] = d.getHospital().getHospitalName();
