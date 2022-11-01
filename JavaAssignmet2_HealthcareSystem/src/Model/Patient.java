@@ -3,28 +3,32 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Model;
+import java.util.Date;
 
 /**
  *
  * @author admin
  */
-public class Patient {
-    public Person person = new Person();
-    public int patientId;
+public class Patient extends Person{
+    
+    private EncounterHistory encounterHistory;
 
-    public Person getPerson() {
-        return person;
+    public Patient(String fullName, House residence, String gender, Date dob, int id, Encounter en) {
+        super(fullName, residence, gender, dob, id);
+        
+        this.encounterHistory = new EncounterHistory();
+        this.encounterHistory.addEncounter(en);
     }
 
-    public void setPerson(Person person) {
-        this.person = person;
+    public EncounterHistory getEncounterHistory() {
+        return encounterHistory;
     }
 
-    public int getPatientId() {
-        return patientId;
+    public void setEncounterHistory(EncounterHistory eh) {
+        this.encounterHistory = eh;
     }
+    
+    
 
-    public void setPatientId(int patientId) {
-        this.patientId = patientId;
-    }
+
 }
