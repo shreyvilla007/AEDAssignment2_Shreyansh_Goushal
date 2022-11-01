@@ -14,14 +14,14 @@ public class Person {
     private String fullName;
     private House residence;
     private String gender;
-    private Date dob;
+    private String dob;
     private int id;
     private boolean displayPerson = true;
 
     public Person(String fullName,
             House residence,
             String gender,
-            Date dob,
+            String dob,
             int id) {
 
         this.fullName = fullName;
@@ -67,11 +67,11 @@ public class Person {
         this.gender = gender;
     }
 
-    public Date getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
