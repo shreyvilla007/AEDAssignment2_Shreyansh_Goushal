@@ -72,7 +72,7 @@ public class PersonScreen extends javax.swing.JPanel {
         jLabel3.setText("Person Id:");
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Date of Birth:");
+        jLabel4.setText("Age:");
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Gender:");
@@ -98,12 +98,12 @@ public class PersonScreen extends javax.swing.JPanel {
         });
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("HouseNo");
+        jLabel6.setText("HouseNo:");
 
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("City:");
 
-        btnSave.setBackground(new java.awt.Color(153, 204, 255));
+        btnSave.setBackground(new java.awt.Color(51, 102, 255));
         btnSave.setForeground(new java.awt.Color(255, 255, 255));
         btnSave.setText("Save");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
@@ -152,7 +152,7 @@ public class PersonScreen extends javax.swing.JPanel {
                                 .addComponent(female))
                             .addComponent(txtCity, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtComm, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 231, Short.MAX_VALUE))))
+                        .addGap(0, 238, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

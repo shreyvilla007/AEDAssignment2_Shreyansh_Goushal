@@ -73,7 +73,7 @@ public class MainFrameForm extends javax.swing.JFrame {
         labImage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/hospital4 (1).png"))); // NOI18N
 
-        jButton1.setBackground(new java.awt.Color(153, 204, 255));
+        jButton1.setBackground(new java.awt.Color(51, 102, 255));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -149,9 +149,9 @@ public class MainFrameForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         if( (txtUsername.getText().matches("admin") && txtPassword.getText().matches("admin")) 
-                ||(txtUsername.getText().matches("person") && txtPassword.getText().matches("person"))
-                ||(txtUsername.getText().matches("doctor") && txtPassword.getText().matches("doctor"))
-                ||(txtUsername.getText().matches("comm") && txtPassword.getText().matches("comm"))
+                ||(txtUsername.getText().matches("user") && txtPassword.getText().matches("user"))
+                ||(txtUsername.getText().matches("doc") && txtPassword.getText().matches("doc"))
+                ||(txtUsername.getText().matches("community") && txtPassword.getText().matches("community"))
                 ||(txtUsername.getText().matches("shrey") && txtPassword.getText().matches("shrey")))
         {
             this.patient.setUser(txtUsername.getText());

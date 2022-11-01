@@ -84,7 +84,7 @@ public class PersonsScreen extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jButton1.setBackground(new java.awt.Color(153, 204, 255));
+        jButton1.setBackground(new java.awt.Color(51, 102, 255));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Add vitals");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +96,7 @@ public class PersonsScreen extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Respiration Rate");
 
-        btnAddPatient.setBackground(new java.awt.Color(153, 204, 255));
+        btnAddPatient.setBackground(new java.awt.Color(51, 102, 255));
         btnAddPatient.setForeground(new java.awt.Color(255, 255, 255));
         btnAddPatient.setText("Add patient");
         btnAddPatient.addActionListener(new java.awt.event.ActionListener() {
@@ -114,7 +114,7 @@ public class PersonsScreen extends javax.swing.JPanel {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Diagnosis");
 
-        jButton2.setBackground(new java.awt.Color(153, 204, 255));
+        jButton2.setBackground(new java.awt.Color(51, 102, 255));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Delete");
         jButton2.addActionListener(new java.awt.event.ActionListener() {

@@ -124,7 +124,7 @@ public class GetDoctorsForm extends javax.swing.JPanel {
              System.out.println("Inside Display Doctors function");
                 System.out.println("Doctors--->"+ms.getDoctorList().getDoctors());
                 System.out.println("Hospital's Community--->"+d.getHospital().getCommunity());
-                
+                System.out.println("Patient's Community--->"+patientCommunity);
             if(d.getHospital().getCommunity().equals(patientCommunity)) {
                 Object[] row = new Object [3];
                 row[0] = d.getDoctorName();
@@ -135,6 +135,7 @@ public class GetDoctorsForm extends javax.swing.JPanel {
                 System.out.println("Inside Display Doctors function");
                 System.out.println("Doctors--->"+ms.getDoctorList().getDoctors());
                 System.out.println("Hospital's Community--->"+d.getHospital().getCommunity());
+                System.out.println("Patient's Community--->"+patientCommunity);
                 
                 
                 

@@ -69,7 +69,7 @@ public class CommunityScreen extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblCommunity);
 
-        btnSave.setBackground(new java.awt.Color(153, 204, 255));
+        btnSave.setBackground(new java.awt.Color(51, 102, 255));
         btnSave.setForeground(new java.awt.Color(255, 255, 255));
         btnSave.setText("Save");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +78,7 @@ public class CommunityScreen extends javax.swing.JPanel {
             }
         });
 
-        btnView.setBackground(new java.awt.Color(153, 204, 255));
+        btnView.setBackground(new java.awt.Color(51, 102, 255));
         btnView.setForeground(new java.awt.Color(255, 255, 255));
         btnView.setText("View");
         btnView.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +87,7 @@ public class CommunityScreen extends javax.swing.JPanel {
             }
         });
 
-        btnDelete.setBackground(new java.awt.Color(153, 204, 255));
+        btnDelete.setBackground(new java.awt.Color(51, 102, 255));
         btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +96,7 @@ public class CommunityScreen extends javax.swing.JPanel {
             }
         });
 
-        btnModify.setBackground(new java.awt.Color(153, 204, 255));
+        btnModify.setBackground(new java.awt.Color(51, 102, 255));
         btnModify.setForeground(new java.awt.Color(255, 255, 255));
         btnModify.setText("Update");
         btnModify.setToolTipText("");

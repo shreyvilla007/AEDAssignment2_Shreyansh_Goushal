@@ -96,7 +96,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jButton1.setBackground(new java.awt.Color(153, 204, 255));
+        jButton1.setBackground(new java.awt.Color(51, 102, 255));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Person Details");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -105,7 +105,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(153, 204, 255));
+        jButton2.setBackground(new java.awt.Color(51, 102, 255));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("New Patient");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -114,7 +114,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(153, 204, 255));
+        jButton5.setBackground(new java.awt.Color(51, 102, 255));
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Existing Patient");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -123,7 +123,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(153, 204, 255));
+        jButton3.setBackground(new java.awt.Color(51, 102, 255));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Community");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -132,7 +132,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(153, 204, 255));
+        jButton4.setBackground(new java.awt.Color(51, 102, 255));
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Doctor Details");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -217,7 +217,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if(user.equals("person") || user.equals("admin")) {
+        if(user.equals("user") || user.equals("admin")) {
             PersonScreen view = new PersonScreen(ms);
             jSplitPane1.setRightComponent(view);
         }
@@ -229,7 +229,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        if(user.equals("doctor") || user.equals("admin")) {
+        if(user.equals("doc") || user.equals("admin")) {
             ExistingPatient view = new ExistingPatient(ms);
             jSplitPane1.setRightComponent(view);
         }
@@ -241,7 +241,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        if(user.equals("comm") || user.equals("admin")) {
+        if(user.equals("community") || user.equals("admin")) {
             CommunityScreen view = new CommunityScreen(ms.getPersonList());
             jSplitPane1.setRightComponent(view);
         }
@@ -253,7 +253,7 @@ public class MedSystemFrame extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-            if((user.equals("person") && isAPatient(user))) {
+            if((user.equals("user") && isAPatient(user))) {
             GetDoctorsForm view = new GetDoctorsForm(ms, user);
             jSplitPane1.setRightComponent(view);
             System.out.println("isApatient --->"+isAPatient(user));

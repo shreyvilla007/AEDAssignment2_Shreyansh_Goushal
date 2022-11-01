@@ -23,20 +23,20 @@ public class MedSystem {
         initializeHospitalDoctorDirectories();
     }
     private void initializeHospitalDoctorDirectories(){
-        Hospital hosp1 = new Hospital("h1", "com1");
-        Hospital hosp2 = new Hospital("h2", "com2");
-        Hospital hosp3 = new Hospital("h3", "com3");
+        Hospital h1 = new Hospital("Ashwini Hospital", "Huntington");
+        Hospital h2 = new Hospital("Harvard Hospital", "Cambridge");
+        Hospital h3 = new Hospital("UMass Hospital", "Roxbury");
         
-        this.hospitalList.addHospital(hosp1);
-        this.hospitalList.addHospital(hosp2);
-        this.hospitalList.addHospital(hosp3);
+        this.hospitalList.addHospital(h1);
+        this.hospitalList.addHospital(h2);
+        this.hospitalList.addHospital(h3);
         
-        this.doctorList.addDoctor(new Doctor("doc11", hosp1));
-        this.doctorList.addDoctor(new Doctor("doc12", hosp1));
-        this.doctorList.addDoctor(new Doctor("doc21", hosp2));
-        this.doctorList.addDoctor(new Doctor("doc22", hosp2));
-        this.doctorList.addDoctor(new Doctor("doc31", hosp3));
-        this.doctorList.addDoctor(new Doctor("doc32", hosp3));
+        this.doctorList.addDoctor(new Doctor("doctor1", h1));
+        this.doctorList.addDoctor(new Doctor("doctor2", h1));
+        this.doctorList.addDoctor(new Doctor("doctor3", h2));
+        this.doctorList.addDoctor(new Doctor("doctor4", h2));
+        this.doctorList.addDoctor(new Doctor("doctor5", h3));
+        this.doctorList.addDoctor(new Doctor("doctor6", h3));
         for(int i=0;i<doctorList.getDoctors().size();i++)
         {
             System.out.println(doctorList.getDoctors().get(i).doctorName);
