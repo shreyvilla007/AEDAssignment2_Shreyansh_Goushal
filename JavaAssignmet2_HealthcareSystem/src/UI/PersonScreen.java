@@ -261,7 +261,7 @@ public class PersonScreen extends javax.swing.JPanel {
             String sss = female.isSelected() ? "female" : "male";
           //  System.out.println("dob:" + dob.getDate());
 
-            Person p = new Person(txtFullName.getText(), h, sss, new Date(), Integer.valueOf(txtPersonId.getText()));
+            Person p = new Person(txtFullName.getText(), h, sss, jTextField1.getText(), Integer.valueOf(txtPersonId.getText()));
             ms.addPerson(p);
             
             JOptionPane.showMessageDialog(this, "Person Registered");

@@ -265,7 +265,7 @@ public class PersonsScreen extends javax.swing.JPanel {
 
             if(v == null || !v.isDisplayPerson() || v.getFullName() == null)
                 continue;
-            Period period = Period.between(v.getDob().toInstant().atZone(ZoneId.systemDefault()).toLocalDate(), LocalDate.now());
+            String period = v.getDob();
 
             Object[] row = new Object[6];
             row[0] = v.getId();
@@ -273,7 +273,7 @@ public class PersonsScreen extends javax.swing.JPanel {
             row[2] = v.getGender();
             row[3] = v.getResidence().getHouseNo();
             row[4] = v.getResidence().getCommunity().getCommunity();
-            row[5] = period.getYears();
+            row[5] = period;
 
             model.addRow(row);
         }
