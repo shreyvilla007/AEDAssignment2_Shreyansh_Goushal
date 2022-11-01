@@ -9,42 +9,49 @@ package Model;
  * @author admin
  */
 public class VitalSigns {
-    int heartRate;
-    int highBloodPressure;
-    float oxygenLevel;
-    float bodytemprature;
+    private int bodyTemp;
+    private int pulseRate;
+    private int respRate;
+    private int bloodPressure;
 
-    public int getHeartRate() {
-        return heartRate;
+    public VitalSigns(int bodyTemp,
+                      int pulseRate,
+                      int bloodPressure) {
+
+        this.bodyTemp = bodyTemp;
+        this.pulseRate = pulseRate;
+        this.bloodPressure = bloodPressure;
     }
 
-    public void setHeartRate(int heartRate) {
-        this.heartRate = heartRate;
+    public int getBodyTemp() {
+        return bodyTemp;
     }
 
-    public int getHighBloodPressure() {
-        return highBloodPressure;
+    public void setBodyTemp(int bodyTemp) {
+        this.bodyTemp = bodyTemp;
     }
 
-    public void setHighBloodPressure(int highBloodPressure) {
-        this.highBloodPressure = highBloodPressure;
+    public int getPulseRate() {
+        return pulseRate;
     }
 
-    public float getOxygenLevel() {
-        return oxygenLevel;
+    public void setPulseRate(int pulseRate) {
+        this.pulseRate = pulseRate;
     }
 
-    public void setOxygenLevel(float oxygenLevel) {
-        this.oxygenLevel = oxygenLevel;
+    public int getRespRate() {
+        return respRate;
     }
 
-    public float getBodytemprature() {
-        return bodytemprature;
+    public void setRespRate(int respRate) {
+        this.respRate = respRate;
     }
 
-    public void setBodytemprature(float bodytemprature) {
-        this.bodytemprature = bodytemprature;
+    public int getBloodPressure() {
+        return bloodPressure;
     }
 
-    
+    public void setBloodPressure(int bloodPressure) {
+        this.bloodPressure = bloodPressure;
+    }
 }
